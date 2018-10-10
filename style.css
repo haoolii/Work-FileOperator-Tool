@@ -1,0 +1,290 @@
+html{
+    width: 100%;
+    height: 100%;
+}
+*,body{
+    margin: 0;
+    padding: 0;
+    font-family: Helvetica, Arial, sans-serif; 
+    width: 100%;
+    height: 100%;
+    font-family: GenJyuuGothic-Normal;
+    outline: none;
+    /* -webkit-user-select: none; */
+    -webkit-app-region: drag;
+    overflow: hidden;
+}
+
+.content{
+    width: 100%;
+    margin-top:50px;
+    padding: 10px;
+    box-sizing: border-box;
+    text-align: center;
+}
+
+.main_form{
+     
+}
+.setting_form{
+}
+.content form{
+    margin-top: 50px;
+}
+h2.title{
+    margin: 0 auto;
+    width: 230px;
+    height: 40px;
+    font-size: 25px;
+    font-weight:normal;
+    color: #FFFFFF;
+    letter-spacing: 15px;
+    text-align: center;
+}
+.content form input{
+    margin-top:20px;
+}
+
+/* 建造按鈕 */
+.buildbtn{
+    width: 230px;
+    height: 40px;
+    margin: 0 auto;
+}
+/* 路徑設定 */
+.pathbtn{
+    width: 230px;
+    height: 40px;    
+    margin: 0 auto;
+    margin-bottom:20px;
+}
+.content form input[name="buildPortalbtn"]{
+    position: absolute;
+    background: #D8D8D8;
+    color: #3F3F41;
+    text-align: left;
+    font-size: 12px;
+    letter-spacing: 6px;
+    padding-left: 20px;
+    -webkit-clip-path: polygon(0 0, 60% 0, 40% 100%, 0 100%);
+    clip-path: polygon(0 0, 60% 0, 40% 100%, 0 100%);
+}
+.content form input[name="portalPath"]{
+    position: absolute;
+    background: #D8D8D8;
+    color: #3F3F41;
+    text-align: left;
+    font-size: 12px;
+    letter-spacing: 0px;
+    padding-left: 10px;
+    -webkit-clip-path: polygon(0 0, 30% 0, 20% 100%, 0 100%);
+    clip-path: polygon(0 0, 30% 0, 20% 100%, 0 100%);
+}
+.content form input[name="portalPathdisplay"]{
+    position: absolute;
+    text-align: left;
+    font-size: 12px;
+    letter-spacing: 6px;
+    padding-right: 20px;
+    padding-left: 70px;
+    -webkit-clip-path: polygon(30% 0, 100% 0, 100% 100%, 20% 100%);
+    clip-path: polygon(30% 0, 100% 0, 100% 100%, 20% 100%);
+}
+
+.content form input[name="buildMobilebtn"]{
+    position: absolute;
+    text-align: right;
+    font-size: 12px;
+    letter-spacing: 6px;
+    padding-right: 20px;
+    -webkit-clip-path: polygon(60% 0, 100% 0, 100% 100%, 40% 100%);
+    clip-path: polygon(60 0, 100% 0, 100% 100%, 40% 100%);
+}
+a.settingbtn{
+    display: inline-block;
+    position: absolute;
+    width: 40px;
+    height: 40px;
+    left: 50%;
+    bottom:40px;
+    margin-left: 75px;
+    background: rgba(255,255,255,0.3);
+    box-sizing: border-box;
+    border-radius: 10px;
+    padding: 5px;
+    transition: all .2s linear 0s;
+}
+a.settingbtn:hover{
+    transform: scale(1.1);
+    color:transparent;
+    cursor: pointer;
+}
+a.settingbtn > svg{
+    width: 25px;
+}
+
+a.mainbtn{
+    display: inline-block;
+    position: absolute;
+    width: 40px;
+    height: 40px;
+    left: 50%;
+    bottom:40px;
+    margin-left: -115px;
+    background: rgba(255,255,255,0.3);
+    box-sizing: border-box;
+    border-radius: 10px;
+    padding: 5px;
+    transition: all .2s linear 0s;
+}
+a.mainbtn:hover{
+    transform: scale(1.1);
+    color:transparent;
+    cursor: pointer;
+}
+a.mainbtn > svg{
+    width: 10px;
+}
+/* input 全部 */
+input{
+    display: block;
+    width: 230px;
+    height: 45px;
+    box-sizing: border-box;
+    padding: 3px 10px 3px;
+    margin: 0 auto;
+    font-size: 18px;
+    color: transparent;
+    text-shadow: 0 0 0 #fff;
+    text-align: center;
+    border: 0;
+    border-radius: 10px;
+    letter-spacing: 8px;
+    background: rgba(255,255,255,0.35);
+    transition: all .2s linear 0s;
+}
+/* input:hover{
+    transform: scale(1.1);
+    color:transparent;
+    text-shadow: 0 0 0 #3F3F41;
+    background: #D8D8D8;
+} */
+input[type="text"]:focus,
+input[type="text"]:hover{
+    /* transform: scale(1.1); */
+    color:transparent;
+    text-shadow: 0 0 0 #3F3F41;
+    background: #D8D8D8; 
+
+    -webkit-animation-name: btnfocus; /* Safari 4.0 - 8.0 */
+    -webkit-animation-duration: 1s; /* Safari 4.0 - 8.0 */
+    animation-name: btnfocus;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+
+}
+
+input[type="button"]:hover{
+    transform: scale(1.1);
+    color:transparent;
+    /* text-shadow: 0 0 0 #3F3F41; */
+    /* background: #D8D8D8; */
+    cursor: pointer;
+}
+
+/* 動畫樣式 */
+/* Safari 4.0 - 8.0 */
+@-webkit-keyframes btnfocus {
+    0%   {transform: scale(1);}
+    50%  {transform: scale(1.03);}
+    100% {transform: scale(1);}
+}
+/* Standard syntax */
+@keyframes btnfocus {
+    0%   {transform: scale(1);}
+    50%  {transform: scale(1.03);}
+    100% {transform: scale(1);}
+}
+
+/* 關閉鈕樣式 */
+.outer {
+    position: absolute;
+    margin: auto;
+    top:20px;
+    right: 20px;
+    width: 30px;
+    height: 25px;
+    cursor: pointer;
+  }
+  
+  .inner {
+    width: inherit;
+    text-align: center;
+  }
+  
+  label { 
+    font-size: .8em; 
+    line-height: 2em;
+    text-transform: uppercase;
+    color: #D8D8D8;
+    transition: all .3s ease-in;
+    opacity: 0;
+    cursor: pointer;
+  }
+  
+  .inner:before, .inner:after {
+    position: absolute;
+    content: '';
+    height: 1px;
+    width: inherit;
+    background: #D8D8D8;
+    left: 0;
+    transition: all .3s ease-in;
+  }
+  
+  .inner:before {
+    top: 50%; 
+    transform: rotate(45deg);  
+  }
+  
+  .inner:after {  
+    bottom: 50%;
+    transform: rotate(-45deg);  
+  }
+  
+  .outer:hover label {
+    opacity: 1;
+  }
+  
+  .outer:hover .inner:before,
+  .outer:hover .inner:after {
+    transform: rotate(0);
+  }
+  
+  .outer:hover .inner:before {
+    top: 0;
+  }
+  
+  .outer:hover .inner:after {
+    bottom: 0;
+  }
+
+  /* 背景特效  */
+  .wrapper{
+    background: none;
+    position: absolute;
+    z-index: 2;
+  }
+  .bg{
+      pointer-events: none;
+      /* background: #3F3F41; */
+      position: absolute;
+      z-index: 1;
+      width:100%;
+      height: 100%;
+      left: 0;
+      top:0;      
+      overflow: hidden;
+      opacity: 1;
+      background-image: linear-gradient(-206deg, #595959 0%, #3F3F41 100%);
+  }

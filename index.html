@@ -2,18 +2,91 @@
 <html>
   <head>
     <meta charset="UTF-8">
-    <title>Hello World!</title>
+    <title>Tool</title>
+    <link rel="stylesheet" href="style.css">
   </head>
   <body>
-    <h1>Hello World!</h1>
-    <!-- All of the Node.js APIs are available in this renderer process. -->
-    We are using Node.js <script>document.write(process.versions.node)</script>,
-    Chromium <script>document.write(process.versions.chrome)</script>,
-    and Electron <script>document.write(process.versions.electron)</script>.
+    <div class="wrapper">
+        <div id="close-btn" class="outer">
+            <div class="inner">
+              <label>X</label>
+            </div>
+        </div>
+    <!-- 主頁 -->
+    <div class="content">
+        <form class="main_form">
+          <!-- 標題 -->
+            <h2 class="title">PROJECT</h2>
+            <!-- 輸入站台代號 -->
+            <input type="text" name="siteid" id="siteid" >
+            <!-- 按鈕 -->
+            <div class="buildbtn">
+              <input type="button" name="buildPortalbtn" id="buildPortalbtn" value="Portal" >
+              <input type="button" name="buildMobilebtn" id="buildMobilebtn" value="Mobile">
+            </div>
+            <!-- 右下角設定按鈕 -->
+            <a class="settingbtn" href="#">
+<svg width="39px" height="50px" viewBox="0 0 39 50" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+  <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+      <g id="Artboard" transform="translate(-1201.000000, -888.000000)">
+          <g id="Component" transform="translate(1202.000000, 888.000000)">
+              <g id="Main">
+                  <g id="1">
+                      <path d="M6.63756902,28.518332 C5.9582043,28.3137441 5.23852153,28.2038818 4.49347993,28.2038818 C3.74843833,28.2038818 3.02875556,28.3137441 2.34939084,28.518332 L2.34939084,2.1441052 C2.34939084,0.952244964 3.30933223,0 4.49347993,0 C5.6858833,0 6.63756902,0.959948596 6.63756902,2.1441052 L6.63756902,28.518332 Z M6.63756902,43.0761373 L6.63756902,47.7550704 C6.63756902,48.9469306 5.67762764,49.8991756 4.49347993,49.8991756 C3.30107657,49.8991756 2.34939084,48.939227 2.34939084,47.7550704 L2.34939084,43.0761373 C3.02875556,43.2807252 3.74843833,43.3905875 4.49347993,43.3905875 C5.23852153,43.3905875 5.9582043,43.2807252 6.63756902,43.0761373 Z" id="Rectangle-137" fill="#D8D8D8"></path>
+                      <ellipse id="Oval-94" stroke="#D8D8D8" stroke-width="2" cx="4.49347993" cy="35.7972347" rx="4.28817818" ry="4.33905875"></ellipse>
+                  </g>
+                  <g id="2" transform="translate(13.936579, 0.000000)">
+                      <path d="M6.63756902,10.0773323 C5.9582043,9.87274447 5.23852153,9.76288218 4.49347993,9.76288218 C3.74843833,9.76288218 3.02875556,9.87274447 2.34939084,10.0773323 L2.34939084,2.1441052 C2.34939084,0.952244964 3.30933223,0 4.49347993,0 C5.6858833,0 6.63756902,0.959948596 6.63756902,2.1441052 L6.63756902,10.0773323 Z M6.63756902,24.6351376 L6.63756902,47.7550704 C6.63756902,48.9469306 5.67762764,49.8991756 4.49347993,49.8991756 C3.30107657,49.8991756 2.34939084,48.939227 2.34939084,47.7550704 L2.34939084,24.6351376 C3.02875556,24.8397255 3.74843833,24.9495878 4.49347993,24.9495878 C5.23852153,24.9495878 5.9582043,24.8397255 6.63756902,24.6351376 Z" id="Rectangle-137" fill="#D8D8D8"></path>
+                      <ellipse id="Oval-94" stroke="#D8D8D8" stroke-width="2" cx="4.49347993" cy="17.356235" rx="4.28817818" ry="4.33905875"></ellipse>
+                  </g>
+                  <g id="3" transform="translate(27.873158, 0.000000)">
+                      <path d="M6.63756902,17.6706851 C5.9582043,17.4660973 5.23852153,17.356235 4.49347993,17.356235 C3.74843833,17.356235 3.02875556,17.4660973 2.34939084,17.6706851 L2.34939084,2.1441052 C2.34939084,0.952244964 3.30933223,0 4.49347993,0 C5.6858833,0 6.63756902,0.959948596 6.63756902,2.1441052 L6.63756902,17.6706851 Z M6.63756902,32.2284904 L6.63756902,47.7550704 C6.63756902,48.9469306 5.67762764,49.8991756 4.49347993,49.8991756 C3.30107657,49.8991756 2.34939084,48.939227 2.34939084,47.7550704 L2.34939084,32.2284904 C3.02875556,32.4330783 3.74843833,32.5429406 4.49347993,32.5429406 C5.23852153,32.5429406 5.9582043,32.4330783 6.63756902,32.2284904 Z" id="Rectangle-137" fill="#D8D8D8"></path>
+                      <ellipse id="Oval-94" stroke="#D8D8D8" stroke-width="2" cx="4.49347993" cy="24.9495878" rx="4.28817818" ry="4.33905875"></ellipse>
+                  </g>
+              </g>
+          </g>
+      </g>
+  </g>
+</svg>
+            </a>
+        </form>
 
+        <form class="setting_form">
+            <!-- 標題 -->
+              <h2 class="title">SETTING</h2>
+              <!-- 輸入站台代號 -->
+              <input type="text" name="siteid" id="siteid" >
+              <!-- 設定 -->
+              <div class="pathbtn">
+                <input type="button" name="portalPath" id="portalPath" value="版控" >
+                <input type="text" name="portalPathdisplay" id="portalPathdisplay" value="">
+              </div>
+              <div class="pathbtn">
+                  <input type="button" name="portalPath" id="portalPath" value="作業區" >
+                  <input type="text" name="portalPathdisplay" id="portalPathdisplay" value="">
+              </div>
+                <!-- 左下角返回紐 -->
+            <a class="mainbtn" href="#">
+                
+<svg width="8px" height="9px" viewBox="0 0 8 9" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+  <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+      <g id="Artboard-1" transform="translate(-186.000000, -698.000000)" fill="#FFFFFF">
+          <polygon id="Shape" points="194 698 186 702.5 194 707"></polygon>
+      </g>
+  </g>
+</svg>
+                            </a>
+          </form>
+      </div>
+    </div>
+    <div class="bg">
+        <canvas id="bubble"></canvas>
+
+    </div>
     <script>
       // You can also require other files to run in this process
       require('./renderer.js')
     </script>
+    <script src="jquery.js"></script>    
   </body>
 </html>
